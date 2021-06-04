@@ -1,0 +1,143 @@
+{
+	"compiler": {
+		"version": "0.5.1+commit.c8a2cb62"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "tokenName",
+						"type": "string"
+					},
+					{
+						"name": "_rUSD",
+						"type": "uint256"
+					},
+					{
+						"name": "_USDC",
+						"type": "uint256"
+					},
+					{
+						"name": "_eth",
+						"type": "uint256"
+					},
+					{
+						"name": "_liqRatio",
+						"type": "uint256"
+					},
+					{
+						"name": "_yeildRatio",
+						"type": "uint256"
+					}
+				],
+				"name": "createlpToken",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "lpTokens",
+				"outputs": [
+					{
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"name": "tokenName",
+						"type": "string"
+					},
+					{
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"name": "rUSD",
+						"type": "uint256"
+					},
+					{
+						"name": "USDC",
+						"type": "uint256"
+					},
+					{
+						"name": "eth",
+						"type": "uint256"
+					},
+					{
+						"name": "liqRatio",
+						"type": "uint256"
+					},
+					{
+						"name": "yeildRatio",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"CDPmanager.sol": "CDPmanager"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"CDPmanager.sol": {
+			"keccak256": "0x8e408ceddc54b46725767ff4bec66a840285085d4919d97d1ffb38869369d4a2",
+			"urls": [
+				"bzzr://8da5cb0765205f7f5f3193131f8c1d93e6cfad8dc32eecf4ca6f979e63631127"
+			]
+		}
+	},
+	"version": 1
+}

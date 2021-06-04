@@ -1,0 +1,290 @@
+{
+	"compiler": {
+		"version": "0.5.1+commit.c8a2cb62"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "poolLength",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "poolInfos",
+				"outputs": [
+					{
+						"name": "poolid",
+						"type": "uint256"
+					},
+					{
+						"name": "poolName",
+						"type": "string"
+					},
+					{
+						"name": "totalamount1",
+						"type": "uint256"
+					},
+					{
+						"name": "totalamount2",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "userid",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "ethToUSDCRatio",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "address"
+					},
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "userinfos",
+				"outputs": [
+					{
+						"name": "cdplpToken",
+						"type": "uint256"
+					},
+					{
+						"name": "userid",
+						"type": "uint256"
+					},
+					{
+						"name": "amount1",
+						"type": "uint256"
+					},
+					{
+						"name": "amount2",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "USDC",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "rUSDreceived",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "poolId",
+						"type": "uint256"
+					},
+					{
+						"name": "_amount2",
+						"type": "uint256"
+					}
+				],
+				"name": "liquidityProvider",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "cdplpToken",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "rUSD",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "devaddr",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ETH-USDCfarm.sol": "TokenFarm"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"CDPmanager.sol": {
+			"keccak256": "0x8e408ceddc54b46725767ff4bec66a840285085d4919d97d1ffb38869369d4a2",
+			"urls": [
+				"bzzr://8da5cb0765205f7f5f3193131f8c1d93e6cfad8dc32eecf4ca6f979e63631127"
+			]
+		},
+		"ETH-USDCfarm.sol": {
+			"keccak256": "0xcd05a0e8f0a13e30bc91ff11c538ef84a949139d865440662842058201cd48f9",
+			"urls": [
+				"bzzr://38b766be2f833505c1e6c536ddcd1df0f27572932283e8a2440839b96a2afd40"
+			]
+		},
+		"FakeRUSD.sol": {
+			"keccak256": "0x5a0a89d4c69836561bbd63fc3ab3fb42ded20d1717e05ba7d30d80bc0fa60e4d",
+			"urls": [
+				"bzzr://118e77ba38f0f9c88771e47b0de4db657bfb433ea711dbc163a7b75fe52ab945"
+			]
+		},
+		"FakeUSDC.sol": {
+			"keccak256": "0x2b41e927c5fa73747b0bebd9bbff8c0d2c8f3f2f8d9e2c884a8c04831753da2e",
+			"urls": [
+				"bzzr://5527082f79f8097a9e6afae65464bff931024cea9d3c75796de33d4b861e9024"
+			]
+		}
+	},
+	"version": 1
+}
