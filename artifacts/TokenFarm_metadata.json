@@ -21,75 +21,21 @@
 			},
 			{
 				"constant": true,
-				"inputs": [],
-				"name": "poolLength",
-				"outputs": [
-					{
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"payable": false,
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"constant": true,
 				"inputs": [
 					{
 						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "poolInfos",
+				"name": "LPproviders",
 				"outputs": [
 					{
-						"name": "poolid",
-						"type": "uint256"
-					},
-					{
-						"name": "poolName",
-						"type": "string"
-					},
-					{
-						"name": "totalamount1",
-						"type": "uint256"
-					},
-					{
-						"name": "totalamount2",
-						"type": "uint256"
+						"name": "",
+						"type": "address"
 					}
 				],
 				"payable": false,
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"constant": true,
-				"inputs": [],
-				"name": "userid",
-				"outputs": [
-					{
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"payable": false,
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"constant": false,
-				"inputs": [],
-				"name": "ethToUSDCRatio",
-				"outputs": [
-					{
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"payable": false,
-				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -98,28 +44,31 @@
 					{
 						"name": "",
 						"type": "address"
-					},
-					{
-						"name": "",
-						"type": "uint256"
 					}
 				],
-				"name": "userinfos",
+				"name": "isproviding",
 				"outputs": [
 					{
-						"name": "cdplpToken",
-						"type": "uint256"
-					},
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
 					{
-						"name": "userid",
-						"type": "uint256"
-					},
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "LPbalance",
+				"outputs": [
 					{
-						"name": "amount1",
-						"type": "uint256"
-					},
-					{
-						"name": "amount2",
+						"name": "",
 						"type": "uint256"
 					}
 				],
@@ -156,40 +105,22 @@
 				"type": "function"
 			},
 			{
-				"constant": false,
-				"inputs": [],
-				"name": "rUSDreceived",
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "hasprovided",
 				"outputs": [
 					{
 						"name": "",
-						"type": "uint256"
+						"type": "bool"
 					}
 				],
 				"payable": false,
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"constant": false,
-				"inputs": [
-					{
-						"name": "poolId",
-						"type": "uint256"
-					},
-					{
-						"name": "_amount2",
-						"type": "uint256"
-					}
-				],
-				"name": "liquidityProvider",
-				"outputs": [
-					{
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"payable": true,
-				"stateMutability": "payable",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -221,21 +152,16 @@
 				"type": "function"
 			},
 			{
-				"constant": true,
-				"inputs": [],
-				"name": "devaddr",
-				"outputs": [
+				"inputs": [
 					{
-						"name": "",
+						"name": "_rUSD",
+						"type": "address"
+					},
+					{
+						"name": "_USDC",
 						"type": "address"
 					}
 				],
-				"payable": false,
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "constructor"
@@ -250,7 +176,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"ETH-USDCfarm.sol": "TokenFarm"
+			"eth-farm.sol": "TokenFarm"
 		},
 		"evmVersion": "byzantium",
 		"libraries": {},
@@ -267,12 +193,6 @@
 				"bzzr://8da5cb0765205f7f5f3193131f8c1d93e6cfad8dc32eecf4ca6f979e63631127"
 			]
 		},
-		"ETH-USDCfarm.sol": {
-			"keccak256": "0xcd05a0e8f0a13e30bc91ff11c538ef84a949139d865440662842058201cd48f9",
-			"urls": [
-				"bzzr://38b766be2f833505c1e6c536ddcd1df0f27572932283e8a2440839b96a2afd40"
-			]
-		},
 		"FakeRUSD.sol": {
 			"keccak256": "0x5a0a89d4c69836561bbd63fc3ab3fb42ded20d1717e05ba7d30d80bc0fa60e4d",
 			"urls": [
@@ -283,6 +203,12 @@
 			"keccak256": "0x2b41e927c5fa73747b0bebd9bbff8c0d2c8f3f2f8d9e2c884a8c04831753da2e",
 			"urls": [
 				"bzzr://5527082f79f8097a9e6afae65464bff931024cea9d3c75796de33d4b861e9024"
+			]
+		},
+		"eth-farm.sol": {
+			"keccak256": "0xbcdb9a3d531a915477f40727063f63665330a5d4aed347c18c52aaad99c7fa98",
+			"urls": [
+				"bzzr://f4e7005c21c9c2beda8d67adcc28a6536daf1b4b48695782c67da14c3984796f"
 			]
 		}
 	},
